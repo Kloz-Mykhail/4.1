@@ -11,5 +11,6 @@ import { CronService } from './cron/cron.service';
   imports: [TypeOrmModule.forFeature([Book, Author, BookAuthor])],
   controllers: [LibController],
   providers: [LibService, CronService],
+  exports: [LibService],
 })
 export class LibModule {}

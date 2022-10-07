@@ -6,11 +6,13 @@ import { Book } from '../lib/models/book.model';
 import { Author } from '../lib/models/author.model';
 import { BookAuthor } from '../lib/models/books-authors.model';
 import { BasicAuthModule } from '../auth/basic-auth.module';
+import { LibModule } from 'src/lib/lib.module';
 
 @Module({
   imports: [
-    TypeOrmModule.forFeature([Book, Author, BookAuthor]),
+    TypeOrmModule.forFeature([Book, BookAuthor, Author]),
     BasicAuthModule,
+    LibModule,
   ],
   controllers: [AdminController],
   providers: [AdminService],

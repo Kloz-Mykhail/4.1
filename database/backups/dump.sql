@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `author` (
   `author` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `IDX_9f79b5a1b561f817e127cc4a42` (`author`)
-) ENGINE = InnoDB AUTO_INCREMENT = 34 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci;
+) ENGINE = InnoDB AUTO_INCREMENT = 40 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci;
 
 # ------------------------------------------------------------
 # SCHEMA DUMP FOR TABLE: book
@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `book` (
   `count` int NOT NULL DEFAULT '0',
   `deleted` tinyint NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE = InnoDB AUTO_INCREMENT = 30 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci;
+) ENGINE = InnoDB AUTO_INCREMENT = 33 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci;
 
 # ------------------------------------------------------------
 # SCHEMA DUMP FOR TABLE: book_author
@@ -56,6 +56,30 @@ INSERT INTO
   `author` (`id`, `author`)
 VALUES
   (29, 'afdcws');
+INSERT INTO
+  `author` (`id`, `author`)
+VALUES
+  (35, 'awsdgvxzc');
+INSERT INTO
+  `author` (`id`, `author`)
+VALUES
+  (37, 'dssfxhb');
+INSERT INTO
+  `author` (`id`, `author`)
+VALUES
+  (36, 'sadfh');
+INSERT INTO
+  `author` (`id`, `author`)
+VALUES
+  (38, 'sehdfb');
+INSERT INTO
+  `author` (`id`, `author`)
+VALUES
+  (39, 'sfgb');
+INSERT INTO
+  `author` (`id`, `author`)
+VALUES
+  (34, 'zsfc');
 INSERT INTO
   `author` (`id`, `author`)
 VALUES
@@ -411,7 +435,7 @@ VALUES
     'Computer Coding for Kid',
     12,
     12,
-    0
+    1
   );
 INSERT INTO
   `book` (
@@ -603,7 +627,7 @@ VALUES
     'NoSQL Distilled: A Brief Guide to the Emerging World of Polyglot Persistence',
     22,
     0,
-    0
+    1
   );
 INSERT INTO
   `book` (
@@ -697,6 +721,42 @@ INSERT INTO
   )
 VALUES
   ('sdv', 213, 432, 'SDGvas', 29, 0, 0);
+INSERT INTO
+  `book` (
+    `title`,
+    `year`,
+    `pages`,
+    `about`,
+    `id`,
+    `count`,
+    `deleted`
+  )
+VALUES
+  ('asdbc', 12, 12, 'zcva', 30, 0, 0);
+INSERT INTO
+  `book` (
+    `title`,
+    `year`,
+    `pages`,
+    `about`,
+    `id`,
+    `count`,
+    `deleted`
+  )
+VALUES
+  ('zsDG', 212, 123, 'sEDAGZXVsD', 31, 0, 0);
+INSERT INTO
+  `book` (
+    `title`,
+    `year`,
+    `pages`,
+    `about`,
+    `id`,
+    `count`,
+    `deleted`
+  )
+VALUES
+  ('awesgf', 12, 1212, 'zsgvdasdfb', 32, 0, 0);
 
 # ------------------------------------------------------------
 # DATA DUMP FOR TABLE: book_author
