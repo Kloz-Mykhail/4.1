@@ -45,8 +45,9 @@ export class LibService {
       .andWhere(' book.year LIKE :year', { year })
       .groupBy('book.id')
       .having('author_name LIKE :author', { author })
+      .limit(count)
       .offset(offset)
-      .take(count)
+
       .getRawMany<IBookWithAuthors>();
   }
 }
